@@ -27,7 +27,7 @@
   <div class="chatlog" id="chatlog">
     <div class="bubble bot">
       Bonjour et bienvenue dans l’outil <strong>Mes travaux à Saint-Saturnin</strong>.<br><br>
-      Ce service vous aide à comprendre les règles locales et propres aux aires de mise en valeur de l'architecture et du patrimoine (AVAP) ou Sites Patrimoniaux Remarquables (SPR). Il ne remplace pas l’avis officiel mais vous oriente pour vos projets.<br><br>
+      Ce service est une première étape pour vous aider à comprendre les règles locales et propres aux aires de mise en valeur de l'architecture et du patrimoine (AVAP) ou Sites Patrimoniaux Remarquables (SPR). Il ne remplace pas l’avis officiel mais vous oriente pour vos projets.<br><br>
       👉 Quel est votre projet ? (ex. “Je veux construire une terrasse”, “Je refais ma toiture”, “Je pose une clôture”, “Je rénove une façade”, etc.)
     </div>
   </div>
@@ -114,7 +114,7 @@ function sendMessage() {
     else if (text.includes("commerce") || text.includes("enseigne")) projectType = "commerce";
     else if (text.includes("panneau") || text.includes("photovoltaïque") || text.includes("solaire")) projectType = "photovoltaique";
     else {
-      append("bot", "Je n’ai pas reconnu ce projet. Essayez avec : terrasse, clôture, façade, toiture, extension, menuiserie, commerce ou panneaux photovoltaïques. Sinon, contacts ci-dessous. Merci.");
+      append("bot", "Je n’ai pas reconnu ce projet. Essayez avec : terrasse, clôture, façade, toiture, extension, menuiserie, commerce ou panneaux photovoltaïques. Sinon, ou pour des projets du type rénovation de bâtiments, contacts ci-dessous. Merci.");
       return;
     }
     step = 1;
